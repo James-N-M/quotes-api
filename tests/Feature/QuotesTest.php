@@ -87,7 +87,7 @@ class QuotesTest extends TestCase
 
         $quote = factory(Quote::class)->create(['user_id' => auth()->id()]);
 
-        $this->patch("/api/account/quotes/$quote->id", $attributes);
+        $this->patch("/api/quotes/$quote->id", $attributes);
 
         $this->assertDatabaseHas('quotes', ['author' => 'jimmyjohns@test.com']);
     }

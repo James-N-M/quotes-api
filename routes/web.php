@@ -11,12 +11,16 @@
 |
 */
 
-Route::get('/quotes/create', 'QuotesController@create');
-
-Route::get('/account', 'UserAccountController@index');
-
-Route::get('/quotes-download', 'QuotesFileController@downloadQuote');
+//Route::get('/quotes/create', 'QuotesController@create');
+//
+//Route::get('/account', 'UserAccountController@index');
+//
+//Route::get('/quotes-download', 'QuotesFileController@downloadQuote');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/{any?}', function(){
+    return view('app');
+});

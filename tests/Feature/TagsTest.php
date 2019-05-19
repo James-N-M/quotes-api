@@ -50,7 +50,7 @@ class TagsTest extends TestCase
         $this->get("/api/tags/$tag->id")->assertSuccessful()
             ->assertSee("$tag->name");
 
-        $this->delete("api/tags/$tag->id")->assertSuccessful();
+        $this->delete("/api/tags/$tag->id")->assertSuccessful();
         $this->assertDatabaseMissing("tags", ["id" => $tag->id]);
     }
 
@@ -87,5 +87,19 @@ class TagsTest extends TestCase
 
         $this->assertDatabaseHas('quote_tag', ['quote_id' => $quote->id, 'tag_id' => $tag->id]);
         $this->assertDatabaseHas('quote_tag', ['quote_id' => $quote->id, 'tag_id' => $tagTwo->id]);
+    }
+
+    public function test_search_a_tag_by_name()
+    {
+        $this->withoutExceptionHandling();
+
+        $this->signIn();
+
+        $tag = factory(Tag::class)->create(['name' => "Flower"]);
+
+        $this->get("/api/tags-search?name=$tag->name",
+            ['Accept: application/json'])
+        ->assertSuccessful();
+
     }
 }

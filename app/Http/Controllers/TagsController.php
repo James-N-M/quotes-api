@@ -25,6 +25,14 @@ class TagsController extends Controller
         ]);
     }
 
+    public function search(Request $request) {
+        if ($request->name) {
+            return response()->json(Tag::search($request->name));
+        } else {
+            abort(403);
+        }
+    }
+
     public function destroy(Tag $tag)
     {
         $tag->delete();
