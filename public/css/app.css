@@ -627,6 +627,12 @@ video {
   }
 }
 
+#welcome-section {
+  background-image: url("https://source.unsplash.com/EDre44wQyOw");
+  background-size: cover;
+  height: 600px;
+}
+
 .appearance-none {
   -webkit-appearance: none;
      -moz-appearance: none;

@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>Beautiful Free Quotes & That's It</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -19,66 +19,45 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
-            <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
-
-                    </ul>
-
-                    <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ml-auto">
-                        <!-- Authentication Links -->
-                        @guest
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                            </li>
-                            @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                                </li>
-                            @endif
-                        @else
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }} <span class="caret"></span>
-                                </a>
-
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="/settings">
-                                       Account settings
-                                    </a>
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        @csrf
-                                    </form>
-                                </div>
-                            </li>
-                        @endguest
-                    </ul>
+        <nav>
+            <div class="flex justify-between px-2 py-4 w-full">
+                <div class="flex w-1/2 items-center">
+                    <a class="font-mono text-2xl" href="{{ url('/') }}">
+                        {{ config('app.name', 'Laravel') }}
+                    </a>
+                    <div class="flex items-center mx-2 py-2 rounded-full bg-gray-200 flex-grow">
+                        <i class="fas fa-search px-3 text-gray-500"></i>
+                        <input class="bg-gray-200 flex-grow text-sm outline-none" type="text" placeholder="Search free high quality quotes">
+                    </div>
                 </div>
+                <div class="flex w-1/2 justify-around items-center">
+                    <a href="" class="text-gray-600 hover:font-medium hover:text-black">Collections</a>
+                    <a href="" class="text-gray-600 hover:font-medium hover:text-black">Explore</a>
+                    <a href="" class="text-gray-600 hover:font-medium hover:text-black"><i class="fas fa-ellipsis-h"></i></a>
+
+                    <button class="border-2 font-thin px-2 rounded text-gray-600 hover:font-medium hover:text-black hover:border-black">Submit a quote</button>
+                    <button class="border-l-2 pl-6 text-gray-600 hover:font-medium hover:text-black">Login</button>
+                    <button class="bg-green-600 font-bold px-4 py-1 text-white">Join Free</button>
+                </div>
+            </div>
+            <div class="px-2 w-full">
+                <ul class="flex">
+                    <router-link to="/" class="mx-4 text-sm pb-4 hover:font-medium hover:text-black text-gray-700" exact><li>Editorial</li></router-link>
+                    <router-link to="/tags/courage" class="mx-4 text-sm pb-4 hover:font-medium hover:text-black text-gray-700" exact><li>Courage</li></router-link>
+                    <router-link to="/tags/fantasy" class="mx-4 text-sm pb-4 hover:font-medium hover:text-black text-gray-700" exact><li>Fantasy</li></router-link>
+                    <router-link to="/tags/harry-potter" class="mx-4 text-sm pb-4 hover:font-medium hover:text-black text-gray-700" exact><li>Harry Potter</li></router-link>
+                </ul>
             </div>
         </nav>
 
-        <main class="py-4">
+        <main>
             @yield('content')
         </main>
+
     </div>
 </body>
 </html>

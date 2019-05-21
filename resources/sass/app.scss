@@ -1,5 +1,9 @@
 @tailwind base;
 
 @tailwind components;
-
+#welcome-section {
+    background-image: url("https://source.unsplash.com/EDre44wQyOw");
+    background-size: cover;
+    height: 600px;
+}
 @tailwind utilities;

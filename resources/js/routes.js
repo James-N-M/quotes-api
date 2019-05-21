@@ -1,8 +1,10 @@
-import About from './components/About';
+import TagPage from './components/TagPage';
 import Home from './components/Home';
 
 export default {
     mode: 'history',
+
+    linkActiveClass: 'border-b-2 border-black font-medium text-black',
 
     routes: [
 
@@ -12,8 +14,8 @@ export default {
         },
 
         {
-            path: '/about',
-            component: About
+            path: '/tags/*',
+            component: TagPage
         }
     ]
 };

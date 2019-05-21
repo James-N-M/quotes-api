@@ -10,7 +10,7 @@ class QuotesController extends Controller
 {
     public function index()
     {
-        $quotes = Quote::all();
+        $quotes = Quote::with('user')->get();
         return $quotes;
     }
 
