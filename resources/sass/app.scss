@@ -6,4 +6,8 @@
     background-size: cover;
     height: 600px;
 }
+.sticky {
+    position: sticky;
+    z-index: 10;
+}
 @tailwind utilities;

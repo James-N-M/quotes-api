@@ -7,6 +7,8 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
+    <link rel="shortcut icon" href="/quotes-favicon.ico">
+
     <title>Beautiful Free Quotes & That's It</title>
 
     <!-- Scripts -->
@@ -23,13 +25,13 @@
 </head>
 <body>
     <div id="app">
-        <nav>
+        <nav class="sticky top-0 bg-white">
             <div class="flex justify-between px-2 py-4 w-full">
                 <div class="flex w-1/2 items-center">
                     <a class="font-mono text-2xl" href="{{ url('/') }}">
                         {{ config('app.name', 'Laravel') }}
                     </a>
-                    <div class="flex items-center mx-2 py-2 rounded-full bg-gray-200 flex-grow">
+                    <div class="flex items-center mx-2 py-2 px-2 rounded-full bg-gray-200 flex-grow">
                         <i class="fas fa-search px-3 text-gray-500"></i>
                         <input class="bg-gray-200 flex-grow text-sm outline-none" type="text" placeholder="Search free high quality quotes">
                     </div>
@@ -47,9 +49,9 @@
             <div class="px-2 w-full">
                 <ul class="flex">
                     <router-link to="/" class="mx-4 text-sm pb-4 hover:font-medium hover:text-black text-gray-700" exact><li>Editorial</li></router-link>
-                    <router-link to="/tags/courage" class="mx-4 text-sm pb-4 hover:font-medium hover:text-black text-gray-700" exact><li>Courage</li></router-link>
-                    <router-link to="/tags/fantasy" class="mx-4 text-sm pb-4 hover:font-medium hover:text-black text-gray-700" exact><li>Fantasy</li></router-link>
-                    <router-link to="/tags/harry-potter" class="mx-4 text-sm pb-4 hover:font-medium hover:text-black text-gray-700" exact><li>Harry Potter</li></router-link>
+                    <router-link to="/tags/courage" class="mx-4 text-sm pb-4 hover:font-medium hover:text-black text-gray-700" ><li>Courage</li></router-link>
+                    <router-link to="/tags/fantasy" class="mx-4 text-sm pb-4 hover:font-medium hover:text-black text-gray-700" ><li>Fantasy</li></router-link>
+                    <router-link to="/tags/harry-potter" class="mx-4 text-sm pb-4 hover:font-medium hover:text-black text-gray-700" ><li>Harry Potter</li></router-link>
                 </ul>
             </div>
         </nav>

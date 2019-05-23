@@ -6,21 +6,18 @@
                     <h1 class="text-6xl text-white font-bold">quotes</h1>
                     <p class="text-white text-2xl">Beautiful, free quotes.</p>
                     <p class="pb-2 text-2xl text-white">Gifted by the world’s most generous community of writers. 🎁</p>
-                    <div class="bg-gray-200 flex flex-grow items-center py-4 rounded">
-                        <i class="fas fa-search px-3 text-gray-500"></i>
-                        <input class="bg-gray-200 flex-grow text-sm outline-none" type="text" placeholder="Search free high quality quotes">
-                    </div>
+                    <tag-search></tag-search>
                     <p class="py-2 text-white">Trending searches: <span class="hover:font-medium">flower</span>, <span class="hover:font-medium">fantasy</span>, <span class="hover:font-medium">motivational</span>, <span class="hover:font-medium">love</span>, <span class="hover:font-medium">sad</span></p>
                 </div>
             </section>
         </div>
         <div class="flex flex-wrap justify-around mx-64">
             <v-dialog/>
-            <div v-for="quote in quotes" class="flex flex-col h-64 justify-between mx-2 my-4 shadow-lg w-64" style="height: 400px;width: 400px;" v-on:click="show()">
+            <div v-for="quote in quotes" class="flex flex-col h-64 justify-between mx-2 my-4 shadow-lg w-64" style="height: 400px;width: 400px;">
                 <div class="flex justify-end">
                     <button class="bg-gray-300 px-6 py-4 rounded-bl-full"><i class="fa-heart fas hover:text-red-600 text-lg text-red-400"></i></button>
                 </div>
-                <div class="mx-8">
+                <div class="mx-8" v-on:click="show(quote)" style="cursor: pointer;">
                     <p class="font-mono leading-normal pb-2">"{{quote.quote}}"</p>
                     <i class="font-serif">- {{quote.author}}</i>
                 </div>
@@ -30,7 +27,7 @@
                         <a href="#">{{quote.user.name}}</a>
                     </div>
                     <div>
-                        <button><i class="fas fa-arrow-down"></i></button>
+                        <button v-on:click="download(quote)"><i class="fas fa-arrow-down"></i></button>
                     </div>
                 </div>
             </div>
@@ -39,7 +36,12 @@
 </template>
 
 <script>
+    import TagSearch from './TagSearch'
+
     export default {
+        components: {
+          TagSearch,
+        },
         data() {
             return {
                 quotes: [],
@@ -59,17 +61,17 @@
                         console.log(error);
                     });
             },
-            show () {
-                this.$modal.show('dialog', {
-                    title: 'Alert!',
-                    text: 'You are too awesome',
+            show (quote) {
+                this.$modal.show('dialog',  {
+                    title: `${quote.author}`,
+                    text: `${quote.quote}`,
                     buttons: [
                         {
-                            title: 'Deal with it',
+                            title: 'Like',
                             handler: () => { alert('Woot!') }
                         },
                         {
-                            title: '',       // Button title
+                            title: 'Download',       // Button title
                             default: true,    // Will be triggered by default if 'Enter' pressed.
                             handler: () => {} // Button click handler
                         },
@@ -81,6 +83,15 @@
             },
             hide () {
                 this.$modal.hide('hello-world');
+            },
+            download (quote) {
+                axios.get('/quotes-download?quote=dicks&author=bags')
+                    .then((response) => {
+                        console.log(response);
+                    })
+                    .catch(function (error) {
+                        console.log(error);
+                    });
             }
         }
     }

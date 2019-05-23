@@ -15,7 +15,7 @@
 //
 //Route::get('/account', 'UserAccountController@index');
 //
-//Route::get('/quotes-download', 'QuotesFileController@downloadQuote');
+Route::get('/quotes-download', 'QuotesFileController@downloadQuote');
 
 Auth::routes();
 
