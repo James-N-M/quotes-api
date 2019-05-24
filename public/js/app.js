@@ -1877,21 +1877,47 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {},
   data: function data() {
     return {
       tagId: '',
-      tagName: ''
+      tagName: '',
+      quotes: []
     };
   },
   mounted: function mounted() {
-    this.tagName = this.$route.params.tag.id;
-    this.tagId = this.$route.params.tag.name;
-    console.log(this.tagName);
-    console.log(this.tagId);
+    this.tagId = this.$route.params.tag.id;
+    this.tagName = this.$route.params.tag.name;
+    this.getAllQuotes();
   },
-  methods: {}
+  methods: {
+    getAllQuotes: function getAllQuotes() {
+      var _this = this;
+
+      axios.get("/api/tags/".concat(this.tagId, "/quotes")).then(function (response) {
+        var data = response.data;
+        _this.quotes = data;
+      })["catch"](function (error) {
+        console.log(error);
+      });
+    }
+  },
+  computed: {
+    uppercaseTag: function uppercaseTag() {
+      return this.tagName.charAt(0).toUpperCase() + this.tagName.slice(1, this.tagName.length);
+    },
+    quotesCount: function quotesCount() {
+      return this.quotes.length;
+    }
+  }
 });
 
 /***/ }),
@@ -1924,8 +1950,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
 //
 //
 //
@@ -2661,26 +2685,26 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("p", {
-      model: {
-        value: _vm.tagId,
-        callback: function($$v) {
-          _vm.tagId = $$v
-        },
-        expression: "tagId"
-      }
-    }),
+  return _c("div", { staticClass: "mx-4" }, [
+    _c("div", [
+      _c("h1", { staticClass: "font-bold text-5xl" }, [
+        _vm._v(_vm._s(_vm.uppercaseTag) + " quotes")
+      ]),
+      _vm._v(" "),
+      _c("p", { staticClass: "text-lg" }, [
+        _vm._v(
+          _vm._s(_vm.quotesCount) + " free " + _vm._s(_vm.tagName) + " quotes"
+        )
+      ])
+    ]),
     _vm._v(" "),
-    _c("p", {
-      model: {
-        value: _vm.tagName,
-        callback: function($$v) {
-          _vm.tagName = $$v
-        },
-        expression: "tagName"
-      }
-    })
+    _c("div", [
+      _c("ul", [
+        _c("li", { staticClass: "text-lg" }, [
+          _vm._v(_vm._s(_vm.quotesCount) + " Quotes")
+        ])
+      ])
+    ])
   ])
 }
 var staticRenderFns = []
@@ -2772,12 +2796,6 @@ var render = function() {
             return _c(
               "ul",
               [
-                _c("a", { attrs: { href: "/search/quotes" } }, [
-                  _c("li", { staticClass: "hover:bg-gray-200 px-6 py-3" }, [
-                    _vm._v(_vm._s(tag.name))
-                  ])
-                ]),
-                _vm._v(" "),
                 _c(
                   "router-link",
                   {
@@ -2785,7 +2803,11 @@ var render = function() {
                       to: { name: "search-quotes", params: { tag: tag } }
                     }
                   },
-                  [_vm._v("more..")]
+                  [
+                    _c("li", { staticClass: "hover:bg-gray-200 px-6 py-3" }, [
+                      _vm._v(_vm._s(tag.name))
+                    ])
+                  ]
                 )
               ],
               1
