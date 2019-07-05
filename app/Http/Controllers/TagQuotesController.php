@@ -2,13 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Tag;
 
 class TagQuotesController extends Controller
 {
+    public function index(Tag $tag)
+    {
+        return view('search-quotes', compact('tag'));
+    }
+
     public function show(Tag $tag)
     {
-        return $tag->quotes()->get();
+        return $tag->quotes()
+            ->with(['user', 'tags'])
+            ->get();
     }
 }

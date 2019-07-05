@@ -3,9 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="ac4ae4a1-1e55-4462-9128-2d3b258ecdcd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TagQuotesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TagQuotesController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Home.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/components/QuoteSearchPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/QuoteSearchPage.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/components/TagSearch.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/TagSearch.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/routes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,26 +87,26 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="4" />
-          <entry key="env" value="1" />
+          <entry key="env" value="2" />
           <entry key="gitignore" value="1" />
-          <entry key="js" value="20" />
-          <entry key="php" value="80" />
+          <entry key="js" value="29" />
+          <entry key="php" value="135" />
           <entry key="scss" value="4" />
           <entry key="ts" value="1" />
-          <entry key="vue" value="25" />
+          <entry key="vue" value="34" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key=".env file" value="1" />
-          <entry key="Blade" value="29" />
+          <entry key=".env file" value="2" />
+          <entry key="Blade" value="50" />
           <entry key="CSS" value="4" />
-          <entry key="JavaScript" value="20" />
-          <entry key="PHP" value="51" />
+          <entry key="JavaScript" value="29" />
+          <entry key="PHP" value="85" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="SCSS" value="4" />
           <entry key="TypeScript" value="1" />
-          <entry key="Vue.js" value="25" />
+          <entry key="Vue.js" value="34" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -105,33 +114,36 @@
           <entry key="css" value="22" />
           <entry key="dummy" value="1" />
           <entry key="env" value="16" />
-          <entry key="js" value="596" />
-          <entry key="php" value="3557" />
+          <entry key="js" value="744" />
+          <entry key="php" value="4575" />
           <entry key="scss" value="133" />
-          <entry key="vue" value="3731" />
+          <entry key="vue" value="4517" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key=".env file" value="16" />
-          <entry key="Blade" value="1437" />
+          <entry key="Blade" value="2064" />
           <entry key="CSS" value="22" />
-          <entry key="JavaScript" value="596" />
-          <entry key="PHP" value="2120" />
+          <entry key="JavaScript" value="744" />
+          <entry key="PHP" value="2511" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="SCSS" value="133" />
-          <entry key="Vue.js" value="3731" />
+          <entry key="Vue.js" value="4517" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="15" />
+          <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.open.time.5" value="1" />
-          <entry key="project.open.time.6" value="2" />
+          <entry key="project.open.time.5" value="2" />
+          <entry key="project.open.time.6" value="3" />
+          <entry key="project.open.time.7" value="4" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
     </session>
@@ -139,41 +151,55 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/js/components/QuoteSearchPage.vue">
+        <entry file="file://$PROJECT_DIR$/resources/views/search-quotes.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="1" column="22" lean-forward="true" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+            <state relative-caret-position="68">
+              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
+        <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="397" column="4" selection-start-line="397" selection-start-column="4" selection-end-line="397" selection-end-column="4" />
+            <state relative-caret-position="170">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/js/components/Home.vue">
+        <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="8" column="45" lean-forward="true" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="1428">
+              <caret line="42" selection-start-line="42" selection-end-line="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="179">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/js/components/TagSearch.vue">
+        <entry file="file://$PROJECT_DIR$/.env">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            <state relative-caret-position="272">
+              <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -189,15 +215,10 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>g</find>
-      <find>this.author</find>
-      <find>author</find>
-      <find>link</find>
       <find>logout</find>
       <find>{</find>
       <find>return res</find>
       <find>TagsController</find>
-      <find>tags</find>
       <find>}</find>
       <find>update</find>
       <find>factory(Quote::class)-&gt;create()</find>
@@ -219,6 +240,11 @@
       <find>$PROJECT_DIR$/../../../..</find>
       <find>welcome-</find>
       <find>Gifted By</find>
+      <find>Vue.use</find>
+      <find>$tags</find>
+      <find>tags</find>
+      <find>link</find>
+      <find>Login</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -230,11 +256,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
-        <option value="$PROJECT_DIR$/database/factories/UserFactory.php" />
-        <option value="$PROJECT_DIR$/resources/views/user/account.blade.php" />
-        <option value="$PROJECT_DIR$/app/Quotes.php" />
-        <option value="$PROJECT_DIR$/tests/Feature/ManageQuotesTest.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ManageQuotesController.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_05_11_181050_create_tags_table.php" />
         <option value="$PROJECT_DIR$/database/factories/TagsFactory.php" />
@@ -256,7 +277,6 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/ApplicationStatusController.php" />
         <option value="$PROJECT_DIR$/tests/Feature/SearchsTest.php" />
         <option value="$PROJECT_DIR$/tests/Feature/TagQuotesTest.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/TagQuotesController.php" />
         <option value="$PROJECT_DIR$/app/Tag.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/TagsController.php" />
         <option value="$PROJECT_DIR$/tests/Feature/TagsTest.php" />
@@ -266,21 +286,27 @@
         <option value="$PROJECT_DIR$/routes/api.php" />
         <option value="$PROJECT_DIR$/resources/js/components/About.vue" />
         <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
         <option value="$PROJECT_DIR$/webpack.mix.js" />
         <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/resources/views/app.blade.php" />
         <option value="$PROJECT_DIR$/public/css/app.css" />
         <option value="$PROJECT_DIR$/resources/js/components/TagPage.vue" />
-        <option value="$PROJECT_DIR$/resources/js/app.js" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/QuotesController.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/sass/app.scss" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
-        <option value="$PROJECT_DIR$/resources/js/components/Home.vue" />
-        <option value="$PROJECT_DIR$/resources/js/routes.js" />
-        <option value="$PROJECT_DIR$/resources/js/components/QuoteSearchPage.vue" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/TestController.php" />
+        <option value="$PROJECT_DIR$/resources/views/testing.blade.php" />
         <option value="$PROJECT_DIR$/resources/js/components/TagSearch.vue" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/TagQuotesController.php" />
+        <option value="$PROJECT_DIR$/resources/js/components/QuoteSearchPage.vue" />
+        <option value="$PROJECT_DIR$/resources/views/search-quotes.blade.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/resources/js/components/Home.vue" />
+        <option value="$PROJECT_DIR$/resources/views/app.blade.php" />
+        <option value="$PROJECT_DIR$/resources/js/routes.js" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
+        <option value="$PROJECT_DIR$/resources/js/app.js" />
+        <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" />
       </list>
     </option>
   </component>
@@ -364,7 +390,38 @@
           <mapping local-root="$PROJECT_DIR$" remote-root="/Users/jamesm/.composer/vendor/laravel/valet" />
         </path_mappings>
       </server>
-      <server host="" id="b80a5781-4d1d-4945-a18d-89d63520a6a3" use_path_mappings="true">
+      <server id="b80a5781-4d1d-4945-a18d-89d63520a6a3" use_path_mappings="true">
+        <path_mappings>
+          <mapping local-root="$PROJECT_DIR$" remote-root="/Users/jamesm/.composer/vendor/laravel/valet" />
+        </path_mappings>
+      </server>
+      <server id="6e304a48-75be-44fd-bb7e-7491bf273549" use_path_mappings="true">
+        <path_mappings>
+          <mapping local-root="$PROJECT_DIR$" remote-root="/Users/jamesm/.composer/vendor/laravel/valet" />
+        </path_mappings>
+      </server>
+      <server id="7df31f60-b212-4413-9c0d-8362c890d945" use_path_mappings="true">
+        <path_mappings>
+          <mapping local-root="$PROJECT_DIR$" remote-root="/Users/jamesm/.composer/vendor/laravel/valet" />
+        </path_mappings>
+      </server>
+      <server id="26681403-4b64-45ea-b147-cb04133ab3a6" />
+      <server id="a6a7c74a-3253-4942-9dde-1bb66e0f316e" use_path_mappings="true">
+        <path_mappings>
+          <mapping local-root="$PROJECT_DIR$" remote-root="/Users/jamesm/.composer/vendor/laravel/valet" />
+        </path_mappings>
+      </server>
+      <server id="096d0876-2d00-4ada-abcf-d0f4c260e666" use_path_mappings="true">
+        <path_mappings>
+          <mapping local-root="$PROJECT_DIR$" remote-root="/Users/jamesm/.composer/vendor/laravel/valet" />
+        </path_mappings>
+      </server>
+      <server id="cce92220-8765-4a17-96e4-704db773a5c7" use_path_mappings="true">
+        <path_mappings>
+          <mapping local-root="$PROJECT_DIR$" remote-root="/Users/jamesm/.composer/vendor/laravel/valet" />
+        </path_mappings>
+      </server>
+      <server host="" id="1b97074b-2c43-4834-855a-f4c104f175ae" use_path_mappings="true">
         <path_mappings>
           <mapping local-root="$PROJECT_DIR$" remote-root="/Users/jamesm/.composer/vendor/laravel/valet" />
         </path_mappings>
@@ -459,56 +516,22 @@
     </include_path>
   </component>
   <component name="PhpXdebugProxy" ide_key="PHPSTORM" />
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="244" />
+    <option name="y" value="23" />
+    <option name="width" value="1676" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="quotes-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="quotes-api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="quotes-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="quotes-api" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="quotes-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="quotes-api" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="quotes-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="quotes-api" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="quotes-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="quotes-api" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="Constants" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/resources/js/components/Home.vue&#10;routes&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/resources/js/routes.js&#10;web.php&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/routes/web.php&#10;app.blade&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/resources/views/layouts/app.blade.php&#10;Home&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/resources/js/components/Home.vue&#10;app.blade.&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/resources/views/app.blade.php&#10;Home.vue&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/resources/js/components/Home.vue&#10;QuotesFile&#9;null&#9;null&#10;Home.&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/resources/js/components/Home.vue&#10;app.&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/resources/views/app.blade.php&#10;TagPAge&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/resources/js/components/TagPage.vue&#10;QuoteController&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/app/Http/Controllers/QuotesController.php&#10;quote.php&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/app/Quote.php&#10;home&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/resources/js/components/Home.vue&#10;app.js&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/resources/js/app.js&#10;./bootstrap&#9;null&#9;null&#10;app.bla&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/resources/views/layouts/app.blade.php&#10;route&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/resources/js/routes.js&#10;app&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/public/css/app.css&#10;tailwind&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/tailwind.js&#10;app.blade.php&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/resources/views/app.blade.php&#10;public/&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/public&#10;app.b&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/resources/views/layouts/app.blade.php&#10;routes.js&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/resources/js/routes.js&#10;.env&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/.env&#10;tailwind.js&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/tailwind.config.js&#10;webpack.&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/webpack.mix.js&#10;app.sc&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/resources/sass/app.scss&#10;app.bl&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/resources/views/layouts/app.blade.php&#10;welcome&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/resources/views/welcome.blade.php&#10;resources/&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/resources&#10;api.php&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/routes/api.php&#10;ProfileSet&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/tests/Feature/ProfileSettingsTest.php&#10;Tag&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/app/Tag.php&#10;Feature/Sear&#9;null&#9;null&#10;RandomQu&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/app/Http/Controllers/RandomQuoteController.php&#10;TagsC&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/app/Http/Controllers/TagsController.php&#10;TagsTest&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/tests/Feature/TagsTest.php&#10;QuoteTagsC&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/app/Http/Controllers/QuoteTagsController.php&#10;TagQuotesController&#9;null&#9;null&#10;QuoteTags&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/tests/Feature/QuoteTagsTest.php&#10;TagQu&#9;null&#9;null&#10;Quote.php&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/app/Quote.php&#10;tag.php&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/app/Tag.php&#10;QuoteTagTest&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/tests/Feature/QuoteTagsTest.php&#10;QuotesCont&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/app/Http/Controllers/QuotesController.php&#10;migrations/&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/database/migrations&#10;factories&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/database/factories&#10;tests/&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/tests&#10;SearchTest&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value=".env&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/.env&#10;web&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/routes/web.php&#10;Login&#9;null&#9;null&#10;web.php&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/routes/web.php&#10;app.blade&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/resources/views/layouts/app.blade.php&#10;home.blade&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/resources/views/home.blade.php&#10;app.b&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/resources/views/layouts/app.blade.php&#10;rout&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/resources/js/routes.js&#10;Home.vue&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/resources/js/components/Home.vue&#10;route&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/resources/js/routes.js&#10;resources/&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/resources&#10;app.&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/resources/views/app.blade.php&#10;homeController&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/app/Http/Controllers/HomeController.php&#10;home.vue&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/resources/js/components/Home.vue&#10;router.js&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/node_modules/vue-router/dist/vue-router.js&#10;home&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/app/Http/Controllers/HomeController.php&#10;QuoteSe&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/resources/js/components/QuoteSearchPage.vue&#10;HomeController&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/app/Http/Controllers/HomeController.php&#10;app.bl&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/resources/views/layouts/app.blade.php&#10;search-qu&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/resources/views/search-quotes.blade.php&#10;TagQ&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/app/Http/Controllers/TagQuotesController.php&#10;HomeC&#9;null&#9;null&#10;TagSear&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/resources/js/components/TagSearch.vue&#10;Tag&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/app/Http/Controllers/TagQuotesController.php&#10;Q&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/resources/views/search-quotes.blade.php&#10;Controller&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/app/Http/Controllers/TagQuotesController.php&#10;Quo&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/resources/js/components/QuoteSearchPage.vue&#10;Rout&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/resources/js/routes.js&#10;router&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/vendor/laravel/framework/src/Illuminate/Routing/Router.php&#10;app.blad&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/resources/views/app.blade.php&#10;appb&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/resources/views/app.blade.php&#10;Tag.php&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/app/Tag.php&#10;quote.php&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/app/Quote.php&#10;api.php&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/routes/api.php&#10;home.&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/resources/js/components/Home.vue&#10;TestCont&#9;null&#9;null&#10;routes&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/resources/js/routes.js&#10;Home&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/resources/js/components/Home.vue&#10;app.blade.&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/resources/views/app.blade.php&#10;QuotesFile&#9;null&#9;null&#10;Home.&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/resources/js/components/Home.vue&#10;TagPAge&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/resources/js/components/TagPage.vue&#10;QuoteController&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/app/Http/Controllers/QuotesController.php&#10;app.js&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/resources/js/app.js&#10;./bootstrap&#9;null&#9;null&#10;app.bla&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/resources/views/layouts/app.blade.php&#10;app&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/public/css/app.css&#10;tailwind&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/tailwind.js&#10;app.blade.php&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/resources/views/app.blade.php&#10;public/&#9;FILE&#9;file:///Users/jamesm/Documents/laravel-sites/quotes-api/public" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -567,25 +590,33 @@
       <workItem from="1558274679539" duration="16985000" />
       <workItem from="1558328502406" duration="10890000" />
       <workItem from="1558570191036" duration="9515000" />
-      <workItem from="1558662892113" duration="2307000" />
+      <workItem from="1558662892113" duration="2489000" />
+      <workItem from="1558804967208" duration="1457000" />
+      <workItem from="1558827351618" duration="359000" />
+      <workItem from="1559173169301" duration="4539000" />
+      <workItem from="1559267633590" duration="2671000" />
+      <workItem from="1559346444376" duration="2584000" />
+      <workItem from="1559410687909" duration="1633000" />
+      <workItem from="1559489489243" duration="22000" />
+      <workItem from="1559776294203" duration="606000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109907000" />
+    <option name="totallyTimeSpent" value="123960000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="244" y="23" width="1676" height="1057" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.25822604" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.22896698" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32982087" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4130664" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.36217305" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -638,73 +669,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Http/Request.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="698" selection-start-line="698" selection-end-line="698" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Feature/TagsTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="91" column="45" selection-start-line="91" selection-start-column="20" selection-end-line="91" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/ResponseFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2957">
-          <caret line="94" selection-start-line="94" selection-end-line="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/RandomQuoteController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Tag.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserAccountController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Feature/ProfileSettingsTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="632">
-          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Feature/SearchesTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" />
     <entry file="file://$PROJECT_DIR$/webpack.mix.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -716,13 +680,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="502">
           <caret line="89" column="60" selection-start-line="89" selection-start-column="60" selection-end-line="89" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -742,13 +699,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" selection-start-column="19" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -787,66 +737,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Quote.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/QuotesController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
           <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/helpers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="1124" selection-start-line="1124" selection-end-line="1124" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="66" selection-start-line="66" selection-end-line="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="142" selection-start-line="142" selection-end-line="142" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Router.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="719" selection-start-line="719" selection-end-line="719" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="165" selection-start-line="165" selection-end-line="165" />
         </state>
       </provider>
     </entry>
@@ -885,20 +779,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="16" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/app.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/components/About.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -913,31 +793,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="29" column="39" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="53" column="56" lean-forward="true" selection-start-line="53" selection-start-column="56" selection-end-line="53" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/Home.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="8" column="45" lean-forward="true" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="281">
@@ -945,17 +800,183 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/QuoteSearchPage.vue">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/TestController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="1" column="22" lean-forward="true" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+        <state relative-caret-position="263">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/vue-js-modal/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="97" column="6" selection-start-line="97" selection-start-column="6" selection-end-line="97" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Tag.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Quote.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/components/TagSearch.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
-          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <caret line="13" selection-start-line="13" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="132" selection-start-line="132" selection-end-line="132" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/helpers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="1124" selection-start-line="1124" selection-end-line="1124" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="165" selection-start-line="165" selection-end-line="165" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Router.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="719" selection-start-line="719" selection-end-line="719" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/TagQuotesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/vue-router/dist/vue-router.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/routes.js" />
+    <entry file="file://$PROJECT_DIR$/resources/js/components/Home.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1258">
+          <caret line="37" column="10" lean-forward="true" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/QuoteSearchPage.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="7" column="17" lean-forward="true" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="13" column="15" lean-forward="true" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/testing.blade.php" />
+    <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/search-quotes.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1428">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
         </state>
       </provider>
     </entry>

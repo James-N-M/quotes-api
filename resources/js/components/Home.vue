@@ -9,6 +9,9 @@
                     <tag-search></tag-search>
                     <p class="py-2 text-white">Trending searches: <span class="hover:font-medium">flower</span>, <span class="hover:font-medium">fantasy</span>, <span class="hover:font-medium">motivational</span>, <span class="hover:font-medium">love</span>, <span class="hover:font-medium">sad</span></p>
                 </div>
+                <div>
+                    <p class="py-2 text-white">Random Quote</p>
+                </div>
             </section>
         </div>
         <div class="flex flex-wrap justify-around mx-64">

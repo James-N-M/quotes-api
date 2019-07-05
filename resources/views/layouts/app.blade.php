@@ -42,16 +42,28 @@
                     <a href="" class="text-gray-600 hover:font-medium hover:text-black"><i class="fas fa-ellipsis-h"></i></a>
 
                     <button class="border-2 font-thin px-2 rounded text-gray-600 hover:font-medium hover:text-black hover:border-black">Submit a quote</button>
-                    <button class="border-l-2 pl-6 text-gray-600 hover:font-medium hover:text-black">Login</button>
-                    <button class="bg-green-600 font-bold px-4 py-1 text-white">Join Free</button>
+                    @guest
+                        <a href="{{@route('login')}}"><button class="border-l-2 pl-6 text-gray-600 hover:font-medium hover:text-black">Login</button></a>
+                        <a href="{{@route('register')}}"><button class="bg-green-600 font-bold px-4 py-1 text-white">Join Free</button></a>
+                    @endguest
+                    @auth
+                        <button class="border-l-2 pl-6 text-gray-600 hover:font-medium hover:text-black">Logged in</button>
+                    @endauth
                 </div>
             </div>
             <div class="px-2 w-full">
                 <ul class="flex">
-                    <router-link to="/" class="mx-4 text-sm pb-4 hover:font-medium hover:text-black text-gray-700" exact><li>Editorial</li></router-link>
-                    <router-link to="/tags/courage" class="mx-4 text-sm pb-4 hover:font-medium hover:text-black text-gray-700" ><li>Courage</li></router-link>
-                    <router-link to="/tags/fantasy" class="mx-4 text-sm pb-4 hover:font-medium hover:text-black text-gray-700" ><li>Fantasy</li></router-link>
-                    <router-link to="/tags/harry-potter" class="mx-4 text-sm pb-4 hover:font-medium hover:text-black text-gray-700" ><li>Harry Potter</li></router-link>
+                    <a href="/" class="mx-4 text-sm pb-4 hover:font-medium hover:text-black text-gray-700">Home</a>
+                    <a href="/search/quotes/1"><li class="mx-4 text-sm pb-4 hover:font-medium hover:text-black text-gray-700">Red</li></a>
+                    <a href="/search/quotes/2"><li class="mx-4 text-sm pb-4 hover:font-medium hover:text-black text-gray-700">Blue</li></a>
+                    <a href="/search/quotes/3"><li class="mx-4 text-sm pb-4 hover:font-medium hover:text-black text-gray-700">Yellow</li></a>
+                    <a href="/search/quotes/4"><li class="mx-4 text-sm pb-4 hover:font-medium hover:text-black text-gray-700">GhostWhite</li></a>
+                    <a href="/search/quotes/5"><li class="mx-4 text-sm pb-4 hover:font-medium hover:text-black text-gray-700">BlueViolet</li></a>
+                    <a href="/search/quotes/6"><li class="mx-4 text-sm pb-4 hover:font-medium hover:text-black text-gray-700">DarkGoldenRod</li></a>
+                    <a href="/search/quotes/7"><li class="mx-4 text-sm pb-4 hover:font-medium hover:text-black text-gray-700">Indigo</li></a>
+                    <a href="/search/quotes/8"><li class="mx-4 text-sm pb-4 hover:font-medium hover:text-black text-gray-700">DarkBlue</li></a>
+                    <a href="/search/quotes/9"><li class="mx-4 text-sm pb-4 hover:font-medium hover:text-black text-gray-700">Maroon</li></a>
+                    <a href="/search/quotes/10"><li class="mx-4 text-sm pb-4 hover:font-medium hover:text-black text-gray-700">Orange</li></a>
                 </ul>
             </div>
         </nav>

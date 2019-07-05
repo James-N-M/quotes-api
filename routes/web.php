@@ -19,8 +19,6 @@ Route::get('/quotes-download', 'QuotesFileController@downloadQuote');
 
 Auth::routes();
 
-// Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', 'HomeController@index');
 
-Route::get('/{any?}', function(){
-    return view('app');
-});
+Route::get('/search/quotes/{tag}', 'TagQuotesController@index' );

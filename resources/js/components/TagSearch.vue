@@ -11,7 +11,7 @@
     </div>
     <div v-if="tags.length" class="bg-white my-1 py-4 rounded">
         <ul v-for="tag in tags">
-            <router-link :to="{ name: 'search-quotes', params: {tag: tag } }"><li class="hover:bg-gray-200 px-6 py-3">{{tag.name}}</li></router-link>
+            <a v-bind:href="'/search/quotes/' + tag.id"><li class="hover:bg-gray-200 px-6 py-3">{{tag.name}}</li></a>
         </ul>
     </div>
 </div>
